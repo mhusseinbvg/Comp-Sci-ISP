@@ -401,8 +401,7 @@ JIA.Particle = function(x, y,r, col) {
     // 50% chance of either happening
     this.dir = (Math.random() * 2 > 1) ? 1 : -1;
 
-    // random values so particles do no
-    // travel at the same speeds
+    // random values so particles do not 
     this.vx = ~~(Math.random() * 4) * this.dir;
     this.vy = ~~(Math.random() * 7);
 
