@@ -8,30 +8,29 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="stylesheet" type="text/css" href="css/cssReset.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min">
+    <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5\jquery.mobile-1.4.5.min.css">
     <title>ISP</title>
 </head>
 
 <body>
-    <div data-role="page" id="title screen">
-        <div data-role="header" id="thebutton">
-            <h1>JIA</h1>
-            <button href="game" id="start" <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/self_destruct" android:onClick="selfDestruct" />start</button>
-        </div>
+<div data-role="page" id="intro">
+    <div data-role="header">
+        <h1>JIA</h1>
     </div>
-    <div data-role=p age id="game">
-        <canvas>
-        </canvas>
+    <div role="main" class="ui-content">
+    <a href="start"><button class="ui-btn">Start</button></a>
+    <a href="start"><button class="ui-btn">Level Select</button></a>
+    <a href="#game"><button class="ui-btn">Endless</button></a>
+    </div>
+</div>
+    <div data-role=page id="game">
+    <canvas>
+    </canvas>
     </div>
     <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile-1.4.5"></script>
+    <script type="text/javascript" src="jquery.mobile-1.4.5\jquery.mobile-1.4.5.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
-    $("#game").hide();
-    $("#start").click(function() {
-        $("#game").show();
-        $("#thebutton").hide("fast");
-    });
     </script>
 </body>
 
