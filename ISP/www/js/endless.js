@@ -1,3 +1,4 @@
+
 window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame       || 
           window.webkitRequestAnimationFrame || 
@@ -438,5 +439,5 @@ JIA.Particle = function(x, y,r, col) {
 
 };
 
-window.addEventListener('load', JIA.init, false);
+$('#endlessButton').click(JIA.init);
 window.addEventListener('resize', JIA.resize, false);
