@@ -23,7 +23,8 @@ var JIA = {
     entities: [],
     // the amount of game ticks till bubble spawns (default will be changed for different levels)
     nextBubble: 100,
-    // for tracking player's progress
+    // for tracking player's progress, only endless will it be displayed
+    // but different levels will still use this
     score: {
         taps: 0,
         hit: 0,
@@ -400,7 +401,7 @@ JIA.Particle = function(x, y,r, col) {
     // determines whether particle will
     // travel to the right of left
     // 50% chance of either happening
-    this.dir = (Math.random() * 2 > 1) ? 1 : -1;
+    this.dir = (Mgath.random() * 2 > 1) ? 1 : -1;
 
     // random values so particles do not 
     this.vx = ~~(Math.random() * 4) * this.dir;
@@ -439,5 +440,5 @@ JIA.Particle = function(x, y,r, col) {
 
 };
 
-$('#endlessButton').click(JIA.init);
+//$('#endlessButton').click(JIA.init);
 window.addEventListener('resize', JIA.resize, false);
