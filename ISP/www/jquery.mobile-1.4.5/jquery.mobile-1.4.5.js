@@ -3891,7 +3891,7 @@ if ( eventCaptureSupported ) {
 
 	// also handles taphold
 	$.event.special.tap = {
-		tapholdThreshold: 750,
+		tapholdThreshold: 250,
 		emitTapOnTaphold: true,
 		setup: function() {
 			var thisObject = this,
