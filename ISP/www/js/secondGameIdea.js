@@ -300,6 +300,7 @@
      function gameOver() {
          stop = true;
      }
+     
      assetLoader.downloadAll();
 
      // create a vector 
