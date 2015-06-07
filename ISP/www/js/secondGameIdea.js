@@ -348,7 +348,7 @@
          // jumping
          player.gravity = 1;
          player.dy = 0;
-         player.jumpDy = -10;
+         player.jumpDy = -14;
          player.isFalling = false;
          player.isJumping = false;
          //stylesheet
@@ -371,7 +371,7 @@
                  jumpCounter = 12;
              }
              if (heldTapped) {
-                 player.dy = player.jumpDy * 2;
+                 player.dy = player.jumpDy * 1.5;
 
              }
              jumpCounter = Math.max(jumpCounter - 1, 0);
@@ -388,7 +388,7 @@
              } else {
                  player.anim = player.walkAnim;
              }
-             player.anim.update();
+             player.anim.update()
              touchRemover();
          };
          player.draw = function() {
